@@ -160,5 +160,24 @@
     }
 </script>
 
+<!-- Firebase -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDz57zumYMqs0Lhrqh2QFRSI2ow5Gla1ic",
+    authDomain: "web-elegancia-store.firebaseapp.com",
+    projectId: "web-elegancia-store",
+    storageBucket: "web-elegancia-store.firebasestorage.app",
+    messagingSenderId: "445596725174",
+    appId: "1:445596725174:web:eeef5bddee2d72238cdb17",
+    measurementId: "G-104Y3C6PQZ"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
 </body>
 </html>
